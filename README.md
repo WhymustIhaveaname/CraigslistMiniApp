@@ -1,5 +1,9 @@
 # CraigslistMiniApp
-A Craigslist Mini App for Telegram. The code is intended to be reusable for any developer starting to build Mini Apps for Telegram.
+
+A Craigslist Mini App for Telegram.
+Mini Apps, also called Web Apps, are flexible interfaces that can be launched right inside Telegram.
+They are written in HTML and JavaScript and can completely replace any website.
+The code is intended to be reusable for any developer starting to build Mini Apps for Telegram.
 
 ### Basic Design
 
@@ -19,3 +23,4 @@ A Craigslist Mini App for Telegram. The code is intended to be reusable for any 
 ### Helpful Resources
 
 * [revenkroz/telegram-web-app-bot-example](https://github.com/revenkroz/telegram-web-app-bot-example/tree/master)
+* [Offical Docs](https://core.telegram.org/bots/webapps)
