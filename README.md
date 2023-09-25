@@ -8,8 +8,14 @@ A Craigslist Mini App for Telegram. The code is intended to be reusable for any 
 * There may be several categories.
 * Users can contact the developer for bug reports/spam reports.
 
+### File Descriptions
+
 ### Document Requirement Checklist
 
 - [ ] GIF/video demo for Phone and desktop;
 - [ ] Showing that our Mini App works for different themes
 - [ ] 
+
+### Helpful Resources
+
+* [revenkroz/telegram-web-app-bot-example](https://github.com/revenkroz/telegram-web-app-bot-example/tree/master)
