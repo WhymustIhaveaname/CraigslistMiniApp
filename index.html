@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <!--This meta tag is crucial for making your web page responsive on mobile devices.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--This tag instructs search engine crawlers on how to handle your page.-->
+    <meta name="robots" content="index,follow" />
+
+    <title>Craiglist Telegram Mini App</title>
+
+    <!--To connect your Mini App to the Telegram client, place the script telegram-web-app.js in the <head> tag before any other scripts-->
+    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+    <script>
+        function setThemeClass() {
+            document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+    </script>
+</head>
+
+<body>
+
+"Hello world!"
+
+</body>
+</html>
