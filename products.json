@@ -1,0 +1,27 @@
+[
+    {
+        "name": "car",
+        "price": "20,000",
+        "description": "a second hand car"
+    },{
+        "name": "house",
+        "price": "300,000",
+        "description": "a pretty little house"
+    },{
+        "name": "phone",
+        "price": "1,000",
+        "description": "a usable phone"
+    },{
+        "name": "TV",
+        "price": "1,000",
+        "description": "a usable TV"
+    },{
+        "name": "GPU",
+        "price": "1,000",
+        "description": "a usable GPU"
+    },{
+        "name": "dress",
+        "price": "100",
+        "description": "a dress"
+    }
+]
