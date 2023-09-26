@@ -1,27 +1,43 @@
 [
     {
-        "name": "car",
-        "price": "20,000",
-        "description": "a second hand car"
+        "name": "Car",
+        "price": "19,999",
+        "description": "a red, second hand car with xxx miles",
+        "img": "resources/car.jpg"
     },{
-        "name": "house",
-        "price": "300,000",
-        "description": "a pretty little house"
+        "name": "House",
+        "price": "290,000",
+        "description": "a pretty 3b2b house",
+        "img": "resources/house.jpg"
     },{
-        "name": "phone",
-        "price": "1,000",
-        "description": "a usable phone"
+        "name": "Phone",
+        "price": "100",
+        "description": "a usable smart phone",
+        "img": "resources/phone.jpg"
     },{
         "name": "TV",
         "price": "1,000",
-        "description": "a usable TV"
+        "description": "a usable TV",
+        "img": "resources/tv.jpg"
     },{
         "name": "GPU",
         "price": "1,000",
-        "description": "a usable GPU"
+        "description": "a usable GPU",
+        "img": "resources/gpu.jpg"
     },{
-        "name": "dress",
-        "price": "100",
-        "description": "a dress"
+        "name": "Piano",
+        "price": "free",
+        "description": "moving, need to remove by Friday",
+        "img": "resources/piano.jpg"
+    },{
+        "name": "Burger",
+        "price": "4.99",
+        "description": "A cheese burger",
+        "img": "resources/burger.png"
+    },{
+        "name": "Hotdog",
+        "price": "3.49",
+        "description": "A cartoon hotdog",
+        "img": "resources/hotdog.png"
     }
 ]
