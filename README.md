@@ -7,9 +7,11 @@ The code is intended to be reusable for any developer starting to build Mini App
 
 ### How to boot your first Mini App
 
-1. You should host a webpage. The easiest way is host a page on GitHub. For that, you should
+1. You should host a webpage. The easiest way is to host a page on GitHub. For that, you should
+2. 
     a. create a new repository and add a new file `index.html`
     b. add the following content to `index.html` and save.
+   
         ```
         <!DOCTYPE html>
         <html lang="en">
@@ -25,16 +27,16 @@ The code is intended to be reusable for any developer starting to build Mini App
         </body>
         </html>
         ```
-    c. on GitHub, goto Settings --> Pages --> Build and deployment, to deploy it
+    c. on GitHub, go to Settings --> Pages --> Build and deployment, to deploy it
 
-2. Find [@BotFather](https://t.me/BotFather) on Telegram, creat a new bot, select your bot --> Bot Settings --> Menu Button --> add the url of the `index.html` you just hold. Then you should could launch the Mini App using the Bot's menu button.
+4. Find [@BotFather](https://t.me/BotFather) on Telegram, create a new bot, select your bot --> Bot Settings --> Menu Button --> add the url of the `index.html` you hold. Then, you should be able to launch the Mini App using the Bot's menu button.
 
 ### File Descriptions
 
-* `index.html` is the main page that you will add to bot's menu and Telegram loads.
-* `script.js` is the javascripts.
-* `styles.css` is the css (cascating style sheet) file for `index.html`
-* `products.json` is the mock product list. Change this to your API address in the realworld.
+* `index.html` is the main page you will add to the bot's menu and Telegram loads.
+* `script.js` is the javascript.
+* `styles.css` is the CSS (cascading style sheet) file for `index.html`
+* `products.json` is the mock product list. Change this to your API address in the real world.
 * `simpleserver.py` holds the file on `127.0.0.1:8000` so that developer can debug locally
 
 ### Basic Design
