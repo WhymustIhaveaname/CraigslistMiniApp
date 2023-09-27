@@ -1,0 +1,8 @@
+{
+        "id": "00001",
+        "name": "Car",
+        "price": "19,999",
+        "description": "a red, second hand car with xxx miles",
+        "img": "resources/car.jpg",
+        "contact": "+1 (110) 562-4701"
+}

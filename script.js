@@ -1,6 +1,6 @@
 function fetchProducts() {
     // Make an AJAX request to your backend endpoint
-    fetch('products.json')
+    fetch('api/products.json')
         .then(response => response.json())
         .then(products => {
             // Once you receive the products data, call a function to render them
@@ -13,30 +13,61 @@ function fetchProducts() {
 
 function renderProducts(products) {
     const productListDiv = document.getElementById('product-container');
-
     // Clear any previous content in the product list
-    // productListDiv.innerHTML = '';
+    productListDiv.innerHTML = '';
 
     // Loop through the products and create HTML elements to display them
     products.forEach(product => {
         const productDiv = document.createElement('div');
         productDiv.className = 'product-card';
-        // <div class="product-card">
-        //     <img src="resources/burger.png" alt="Product 1" class="product-image">
-        //     <h2 class="product-title">Product 1</h2>
-        //     <p class="product-description">Description of Product 1 goes here.</p>
-        //     <span class="product-price">$19.99</span>
-        // </div>
         productDiv.innerHTML = `
             <h2 class="product-title">${product.name}</h2>
             <span class="product-price">$${product.price}</span>
             <p class="product-description">${product.description}</p>
+            <button class="product-button" onclick="showDetails('${product.id}')">Show Details</button>
             `;
         if ("img" in product){
             productDiv.innerHTML = `<img src="${product.img}" alt="${product.name}" class="product-image">\n` + productDiv.innerHTML;
         }
         productListDiv.appendChild(productDiv);
     });
+}
+
+function showDetails(id) {
+    fetch(`api/${id}.json`)
+        .then(response => response.json())
+        .then(product => {
+            const productDetailDiv = document.getElementById('product-detail');
+            productDetailDiv.style.display = 'block';
+            productDetailDiv.innerHTML = '';
+
+            const productDiv = document.createElement('div');
+            productDiv.className = 'product-card';
+            productDiv.innerHTML = `
+            <h2 class="product-title">${product.name}</h2>
+            <span class="product-price">$${product.price}</span>
+            <p class="product-description">${product.description}</p>
+            <p>${product.contact}</p>
+            `;
+            if ("img" in product){
+                productDiv.innerHTML = `<img src="${product.img}" alt="${product.name}" class="product-image">\n` + productDiv.innerHTML;
+            }
+            productDiv.innerHTML = `<button class="product-button" onclick="backHome()">Back</button>\n` + productDiv.innerHTML;
+            productDetailDiv.appendChild(productDiv)
+
+            const productListDiv = document.getElementById('product-container');
+            productListDiv.style.display = 'none';
+        })
+        .catch(error => {
+            Telegram.WebApp.showAlert(`Error fetching product detail for ${id}`, error);
+        });
+}
+
+function backHome() {
+    const productDetailDiv = document.getElementById('product-detail');
+    productDetailDiv.style.display = 'none';
+    const productListDiv = document.getElementById('product-container');
+    productListDiv.style.display = 'flex';
 }
 
 function tryPopup() {
@@ -58,5 +89,5 @@ function tryPopup() {
 }
 
 function tryAlert() {
-    Telegram.WebApp.showAlert("current user name is: "+initDataUnsafe.user.username)
+    Telegram.WebApp.showAlert("current user name is: "+Telegram.WebApp.initDataUnsafe.user.username)
 }

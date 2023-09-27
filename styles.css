@@ -28,20 +28,20 @@ body {
 }
 
 .product-title {
-    color: var(--tg-theme-text-color)
-    font-size: 20px;
+    color: var(--tg-theme-text-color);
+    font-size: 16px;
     margin: 0.5em 0;
 }
 
 .product-price {
     color: var(--tg-theme-text-color,#0088cc);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 .product-description {
-    color: var(--tg-theme-hint-color)
-    font-size: 12px;
+    color: var(--tg-theme-hint-color);
+    font-size: 8px;
     color: #666;
 }
 
@@ -50,4 +50,14 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.product-button {
+    background-color: var(--tg-theme-button-color,#3498db);
+    color: var(--tg-theme-button-text-color,#fff);
+    font-size: 16px;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
 }
