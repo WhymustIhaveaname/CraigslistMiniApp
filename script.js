@@ -20,14 +20,15 @@ function renderProducts(products) {
     products.forEach(product => {
         const productDiv = document.createElement('div');
         productDiv.className = 'product-card';
-        productDiv.innerHTML = `
+        productDiv.innerHTML = `<div class="text-container">\n  
             <h2 class="product-title">${product.name}</h2>
             <span class="product-price">$${product.price}</span>
             <p class="product-description">${product.description}</p>
+            \n</div>\n
             <button class="product-button" onclick="showDetails('${product.id}')">Show Details</button>
             `;
         if ("img" in product){
-            productDiv.innerHTML = `<img src="${product.img}" alt="${product.name}" class="product-image">\n` + productDiv.innerHTML;
+            productDiv.innerHTML = `<div class="image-container">\n  <img src="${product.img}" alt="${product.name}" class="product-image">\n</div>` + productDiv.innerHTML;
         }
         productListDiv.appendChild(productDiv);
     });
