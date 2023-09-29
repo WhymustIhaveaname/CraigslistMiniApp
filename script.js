@@ -39,21 +39,14 @@ function showDetails(id) {
         .then(product => {
             const productDetailDiv = document.getElementById('product-detail');
             productDetailDiv.style.display = 'block';
-            productDetailDiv.innerHTML = '';
-
-            const productDiv = document.createElement('div');
-            productDiv.className = 'product-card';
-            productDiv.innerHTML = `
-            <h2 class="product-title">${product.name}</h2>
-            <span class="product-price">$${product.price}</span>
-            <p class="product-description">${product.description}</p>
-            <p>${product.contact}</p>
+            productDetailDiv.innerHTML = `
+                <button class="product-back-button" onclick="backHome()">Back</button>
+                <img    class="product-image" src="${product.img}" alt="${product.name}"/>
+                <h2     class="product-title">${product.name}</h2>
+                <span   class="product-price">$${product.price}</span>
+                <p      class="product-description">${product.description}</p>
+                <p      class="product-contact">Contact: ${product.contact}</p>
             `;
-            if ("img" in product){
-                productDiv.innerHTML = `<img src="${product.img}" alt="${product.name}" class="product-image">\n` + productDiv.innerHTML;
-            }
-            productDiv.innerHTML = `<button class="product-button" onclick="backHome()">Back</button>\n` + productDiv.innerHTML;
-            productDetailDiv.appendChild(productDiv)
 
             const productListDiv = document.getElementById('product-container');
             productListDiv.style.display = 'none';

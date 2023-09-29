@@ -25,12 +25,27 @@ body {
     margin: 0.5em 0.5em; /*top-bottom left-right*/
     padding: 1em;
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.product-detail {
+    background-color: var(--tg-theme-bg-color, #fff);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0.5em 0.5em; /*top-bottom left-right*/
+    padding: 1em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .product-title {
     color: var(--tg-theme-text-color);
     font-size: 16px;
-    margin: 0.5em 0;
+    margin: 0;
 }
 
 .product-price {
@@ -40,9 +55,13 @@ body {
 }
 
 .product-description {
-    color: var(--tg-theme-hint-color);
+    color: var(--tg-theme-hint-color,#666);
     font-size: 8px;
-    color: #666;
+}
+
+.product-contact {
+    color: var(--tg-theme-hint-color,#666);
+    font-size: 8px;
 }
 
 .product-image {
@@ -55,7 +74,17 @@ body {
 .product-button {
     background-color: var(--tg-theme-button-color,#3498db);
     color: var(--tg-theme-button-text-color,#fff);
-    font-size: 16px;
+    font-size: 12px;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.product-back-button {
+    background-color: var(--tg-theme-button-color,#3498db);
+    color: var(--tg-theme-button-text-color,#fff);
+    font-size: 12px;
     margin: 0.5em;
     padding: 0.5em;
     border: none;
