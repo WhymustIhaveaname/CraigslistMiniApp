@@ -16,6 +16,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em;
+    
 }
 
 .product-card {
@@ -23,11 +24,12 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 0.5em 0.5em; /*top-bottom left-right*/
-    padding: 1em;
+    padding: 0.5em;
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 
 .product-detail {
@@ -43,6 +45,7 @@ body {
 }
 
 .product-title {
+    /*margin-top:0.5em*/
     color: var(--tg-theme-text-color);
     font-size: 16px;
     margin: 0;
@@ -52,8 +55,10 @@ body {
     color: var(--tg-theme-text-color,#0088cc);
     font-size: 12px;
     font-weight: bold;
+    /*position: absolute;*/
+    /*left:1em;*/
+    /*bottom: 5em;*/
 }
-
 .product-description {
     color: var(--tg-theme-hint-color,#666);
     font-size: 8px;
@@ -64,11 +69,43 @@ body {
     font-size: 8px;
 }
 
+.product-card > :first-child {
+  margin: 0 0;
+  align-self: flex-start;
+}
+
+
+.image-container {
+
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50%;
+  width: 100%;
+}
+
+.text-container {
+  /*margin-top:200*/
+  margin:0 0;
+  display: flex;
+  justify-content: flex-start;
+  /*align-items: flex-end*/;
+  flex-direction: column;
+  height: 30%;
+  width: 100%;
+}
+
+.text-container > :first-child {
+  margin-top:1em;
+  align-self: flex-start;
+}
 .product-image {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
     display: block;
-    margin: 0 auto;
+    margin: 0 0;
 }
 
 .product-button {
@@ -85,7 +122,7 @@ body {
     background-color: var(--tg-theme-button-color,#3498db);
     color: var(--tg-theme-button-text-color,#fff);
     font-size: 12px;
-    margin: 0.5em;
+    margin: 0;
     padding: 0.5em;
     border: none;
     border-radius: 5px;
