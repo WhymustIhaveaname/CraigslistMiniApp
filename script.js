@@ -28,7 +28,8 @@ function renderProducts(products) {
             <button class="product-button" onclick="showDetails('${product.id}')">Show Details</button>
             `;
         if ("img" in product){
-            productDiv.innerHTML = `<div class="image-container">\n  <img src="${product.img}" alt="${product.name}" class="product-image">\n</div>` + productDiv.innerHTML;
+            //productDiv.innerHTML = `<div class="image-container">\n  <img src="${product.img}" alt="${product.name}" class="product-image">\n</div>` + productDiv.innerHTML;
+            productDiv.innerHTML = `<img src="${product.img}" alt="${product.name}" class="product-image">\n` + productDiv.innerHTML;
         }
         productListDiv.appendChild(productDiv);
     });
