@@ -11,9 +11,9 @@ The Mini App of this repo is [craiglistminiappbot](https://t.me/craiglistminiapp
 1. You should host a webpage. The easiest way is to host a page on GitHub. For that, you should
 
     a. create a new repository and add a new file `index.html`
+
     b. add the following content to `index.html` and save.
-   
-        ```
+
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -27,11 +27,10 @@ The Mini App of this repo is [craiglistminiappbot](https://t.me/craiglistminiapp
             </script>
         </body>
         </html>
-        ```
 
     c. on GitHub, go to Settings --> Pages --> Build and deployment --> select Branch and then Save, to deploy it
 
-2. Find [@BotFather](https://t.me/BotFather) on Telegram, create a new bot, select your bot --> Bot Settings --> Menu Button --> add the url of the `index.html` you hold. Then, you should be able to launch the Mini App using the Bot's menu button.
+3. Find [@BotFather](https://t.me/BotFather) on Telegram, create a new bot, select your bot --> Bot Settings --> Menu Button --> add the url of the `index.html` you hold. Then, you should be able to launch the Mini App using the Bot's menu button.
 
 ### File Descriptions
 
@@ -52,7 +51,7 @@ The Mini App of this repo is [craiglistminiappbot](https://t.me/craiglistminiapp
 
 - [ ] All elements should be responsive
 - [ ] All inputs and images should contain labels for accessibility purposes.
-- [ ] The app should deliver a seamless experience by monitoring the dynamic theme-based colors provided by the API and using them accordingly.
+- [x] The app should deliver a seamless experience by monitoring the dynamic theme-based colors provided by the API and using them accordingly.
 
 ### Document Requirement Checklist
 
