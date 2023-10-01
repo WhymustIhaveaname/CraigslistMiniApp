@@ -1,0 +1,8 @@
+{
+        "id": "00003",
+        "name": "Phone",
+        "price": "100",
+        "description": "a usable smart phone",
+        "img": "resources/phone.jpg",
+        "contact": "fb: Alice"
+}

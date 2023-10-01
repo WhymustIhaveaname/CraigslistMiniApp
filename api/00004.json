@@ -1,0 +1,8 @@
+{
+        "id": "00004",
+        "name": "TV",
+        "price": "1,000",
+        "description": "a usable TV",
+        "img": "resources/tv.jpg",
+        "contact": "GitHub: WhymustIhaveaname"
+}

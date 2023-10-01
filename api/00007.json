@@ -1,0 +1,8 @@
+{
+        "id": "00007",
+        "name": "Burger",
+        "price": "4.99",
+        "description": "A cheese burger",
+        "img": "resources/burger.png",
+        "contact": "efgh"
+}

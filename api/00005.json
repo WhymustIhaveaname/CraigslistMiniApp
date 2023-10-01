@@ -1,0 +1,8 @@
+{
+        "id": "00005",
+        "name": "GPU",
+        "price": "1,000",
+        "description": "a usable GPU",
+        "img": "resources/gpu.jpg",
+        "contact": "whatsapp"
+}

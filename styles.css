@@ -11,6 +11,10 @@ body {
     background-color: var(--tg-theme-secondary-bg-color, #fff);
 }
 
+a {
+    color: var(--tg-theme-link-color,#0000ee);
+}
+
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +31,7 @@ body {
     border-radius: 5px;
     margin: 0.5em;          /*top-bottom left-right*/
     padding: 0.5em;
-    border: 1px solid var(--tg-theme-button-color,#ddd);
+    border: 1px solid var(--tg-theme-secondary-bg-color,#ddd);
     background-color: var(--tg-theme-bg-color, #fff);
 }
 
@@ -50,23 +54,23 @@ body {
 .product-title {
     margin-top: 0.5em;
     color: var(--tg-theme-text-color, #000);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .product-price {
     color: var(--tg-theme-text-color,#000);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .product-description {
     color: var(--tg-theme-hint-color,#666);
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .product-contact {
     color: var(--tg-theme-hint-color,#666);
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .product-image {
@@ -79,7 +83,7 @@ body {
 .product-button {
     background-color: var(--tg-theme-button-color,#3498db);
     color: var(--tg-theme-button-text-color,#fff);
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 0.5em;
     padding: 0.5em;
     border: none;
@@ -89,7 +93,7 @@ body {
 .product-back-button {
     background-color: var(--tg-theme-button-color,#3498db);
     color: var(--tg-theme-button-text-color,#fff);
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     margin-bottom: 0.5em;
     padding: 0.5em;

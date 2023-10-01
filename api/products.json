@@ -45,7 +45,7 @@
         "id": "00008",
         "name": "Hotdog",
         "price": "3.49",
-        "description": "A cartoon hotdog",
+        "description": "This is an example for fetching detail error",
         "img": "resources/hotdog.png"
     }
 ]

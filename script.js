@@ -54,7 +54,7 @@ function showDetails(id) {
             productListDiv.style.display = 'none';
         })
         .catch(error => {
-            Telegram.WebApp.showAlert(`Error fetching product detail for ${id}`, error);
+            Telegram.WebApp.showAlert(`Sorry, error in fetching product detail for ${id}, please contact admin @fuckkwechat`, error);
         });
 }
 
